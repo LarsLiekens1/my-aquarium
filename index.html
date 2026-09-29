@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#04161e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Aquarium">
+<title>Mijn aquarium</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMWE3ZjkyIi8+PHN0b3Agb2Zmc2V0PSIuNiIgc3RvcC1jb2xvcj0iIzBhM2E0YSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzA0MTYxZSIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJmYiIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZDI3YSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2U3OWEyMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiBmaWxsPSJ1cmwoI2JnKSIvPjxwYXRoIGQ9Ik0wIDQyMCBRNjQgMzk2IDEyOCA0MjAgVDI1NiA0MjAgVDM4NCA0MjAgVDUxMiA0MjAgVjUxMiBIMFoiIGZpbGw9IiNkMmI5ODYiLz48cGF0aCBkPSJNNjAgNDMwIFE1MiAzODAgNzAgMzQwIE04NCA0MzAgUTkwIDM4NCA4MCAzNTIiIHN0cm9rZT0iIzNmYTY1YyIgc3Ryb2tlLXdpZHRoPSIxMiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTQ0MCA0MzAgUTQ1MCAzODUgNDMyIDM1MCBNNDE2IDQzMCBRNDA4IDM5MiA0MjAgMzY0IiBzdHJva2U9IiMyZjhhNGEiIHN0cm9rZS13aWR0aD0iMTIiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0xMjAgMjU2IEw1MiAxOTAgUTc4IDI1NiA1MiAzMjIgWiIgZmlsbD0iI2UwOGExYSIvPjxwYXRoIGQ9Ik0yMDAgMTcwIFEyNTAgMTIwIDMwMCAxNzYgWiIgZmlsbD0iI2UwOGExYSIvPjxwYXRoIGQ9Ik0yMTAgMzQwIFEyNTAgNDAwIDMwMCAzMzYgWiIgZmlsbD0iI2UwOGExYSIvPjxlbGxpcHNlIGN4PSIyNzAiIGN5PSIyNTYiIHJ4PSIxNjAiIHJ5PSI5OCIgZmlsbD0idXJsKCNmYikiLz48cGF0aCBkPSJNMTcwIDIwMCBRMTUwIDI1NiAxNzAgMzEyIiBzdHJva2U9IiNiOTZlMGMiIHN0cm9rZS13aWR0aD0iNyIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iLjQ1Ii8+PHBhdGggZD0iTTIzMCAxNjggUTIxMCAyNTYgMjMwIDM0NCIgc3Ryb2tlPSIjYjk2ZTBjIiBzdHJva2Utd2lkdGg9IjciIGZpbGw9Im5vbmUiIG9wYWNpdHk9Ii4zNSIvPjxlbGxpcHNlIGN4PSIyOTAiIGN5PSIyOTAiIHJ4PSIxMjAiIHJ5PSI0MiIgZmlsbD0iI2ZmZjNkMCIgb3BhY2l0eT0iLjQ1Ii8+PHBhdGggZD0iTTMwMCAyNTggUTM0MCAzMDAgMjkwIDMxNiBRMzEwIDI5MCAzMDAgMjU4WiIgZmlsbD0iI2UwOGExYSIvPjxjaXJjbGUgY3g9IjM3MiIgY3k9IjIzMiIgcj0iMjQiIGZpbGw9IiNmZmYiLz48Y2lyY2xlIGN4PSIzODAiIGN5PSIyMzIiIHI9IjEyIiBmaWxsPSIjMTExIi8+PGNpcmNsZSBjeD0iNDMyIiBjeT0iMTcwIiByPSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmZlOWVmIiBzdHJva2Utd2lkdGg9IjYiLz48Y2lyY2xlIGN4PSI0NTgiIGN5PSIxMjYiIHI9IjkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JmZTllZiIgc3Ryb2tlLXdpZHRoPSI1Ii8+PGNpcmNsZSBjeD0iNDIwIiBjeT0iMTAwIiByPSI2IiBmaWxsPSJub25lIiBzdHJva2U9IiNiZmU5ZWYiIHN0cm9rZS13aWR0aD0iNCIvPjwvc3ZnPg==">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<style>
+:root{--acc:#f2b544;--ink:#eaf4f5;--mut:#9cc7cf;--line:#2b6573}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:#04161e;color:var(--ink);font-family:"Trebuchet MS",system-ui,sans-serif;padding-top:env(safe-area-inset-top)}
+#app{height:100%;display:flex;flex-direction:column}
+#pages{flex:1;min-height:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
+#pages::-webkit-scrollbar,#tank::-webkit-scrollbar{display:none}
+.page{flex:0 0 100%;scroll-snap-align:start;scroll-snap-stop:always;display:flex;flex-direction:column;min-height:0;overflow-y:auto}
+.pad{padding:14px 14px 20px}
+.pad h2{margin:0 0 6px;font-size:20px}.pad h3{margin:18px 0 6px;font-size:15px;color:var(--mut)}
+#nav{display:flex;border-top:1px solid var(--line);background:#06202b;padding-bottom:env(safe-area-inset-bottom)}
+#nav button{flex:1;background:none;border:0;color:var(--mut);padding:8px 0 6px;font-size:12px;display:flex;flex-direction:column;align-items:center;gap:2px}
+#nav button.on{color:var(--acc)}
+.item{display:flex;gap:8px;align-items:center}.item span,.grow{flex:1;text-align:left}
+#tankWrap{flex:1;position:relative;margin:0 10px;min-height:200px}
+header{display:flex;gap:8px;padding:10px 10px 4px}
+header select{flex:1;min-width:0}
+.sub{display:flex;align-items:center;gap:8px;padding:0 12px 8px;font-size:13px;color:var(--mut)}
+.sub span{flex:1}
+#tank{position:absolute;inset:0;overflow:hidden;border-radius:18px;border:3px solid #1c6b7c;background:linear-gradient(#0f5a6b,#062733 70%,#04161e)}
+#world{position:relative;height:100%}
+.decor{position:absolute;bottom:18px;z-index:1;cursor:pointer}.decor svg{width:100%;height:100%;display:block}
+#sand{position:absolute;left:0;right:0;bottom:0;height:34px;background:linear-gradient(#d2b986,#a98f5c);border-radius:50% 50% 0 0/18px 18px 0 0}
+.fish{z-index:2;position:absolute;left:0;top:0;cursor:pointer;will-change:transform;filter:drop-shadow(0 4px 4px #0006)}
+#empty{z-index:3;position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:30px;color:var(--mut);pointer-events:none}
+.bar{display:flex;gap:10px;padding:12px 16px}.bar .primary{flex:1;width:auto}
+.dgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}.dgrid button{padding:6px;text-align:center}.dgrid svg{width:100%;height:56px}
+button{font:inherit;cursor:pointer}
+.primary{width:100%;padding:14px;border:0;border-radius:14px;background:var(--acc);color:#2a1c00;font-weight:700;font-size:17px}
+.primary:disabled{opacity:.5}
+.ghost{background:transparent;border:1px solid var(--line);color:var(--ink);padding:10px 12px;border-radius:10px;font-size:14px}
+.danger{border-color:#a8483a;color:#ffb3a6}
+.ov{position:fixed;inset:0;background:#000a;display:none;align-items:flex-end;justify-content:center;z-index:5}
+.ov.on{display:flex}
+#ovAuth{background:#04161e;align-items:center;z-index:9}
+.sheet{background:#0b2a35;width:100%;max-width:480px;border-radius:20px 20px 0 0;padding:16px;max-height:92dvh;overflow:auto;padding-bottom:calc(16px + env(safe-area-inset-bottom))}
+#ovAuth .sheet{border-radius:20px;margin:0 12px}
+.sheet h2{margin:0 0 4px;font-size:19px}
+.lbl{display:block;font-size:14px;margin:12px 0 4px;color:var(--mut)}
+select,input[type=text],input[type=email],input[type=password]{width:100%;padding:12px;font-size:16px;border-radius:10px;border:1px solid var(--line);background:#06202b;color:var(--ink)}
+input[type=color]{width:100%;height:42px;border:1px solid var(--line);border-radius:10px;background:#06202b;padding:2px}
+.row{display:flex;gap:10px}.row>div{flex:1}
+.pv{display:flex;gap:12px;align-items:center;margin-top:12px}
+.thumb{width:96px;height:96px;flex:none;border-radius:12px;background:#06202b center/cover;border:1px dashed var(--line);display:grid;place-items:center;font-size:13px;color:var(--mut);text-align:center}
+#pvfish,#spfish{flex:1;height:96px;display:grid;place-items:center}
+#pvfish svg,#spfish svg{max-width:150px}
+.tools{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.note{font-size:13px;color:var(--mut);margin:8px 0 0;min-height:18px}
+.acts{display:flex;gap:10px;margin-top:16px}.acts>*{flex:1}
+#dphoto{width:100%;aspect-ratio:4/3;border-radius:12px;background:#06202b center/cover;margin:10px 0}
+#dinfo{font-size:17px;margin:6px 0 0}
+.list{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.list button{text-align:left}
+.list small{display:block;color:var(--mut)}
+.off{opacity:.5}
+.logo{display:block;width:76px;height:76px;border-radius:22%;margin:0 auto 8px;box-shadow:0 4px 14px #0008}
+.decor.sel{outline:2px dashed var(--acc);outline-offset:3px;border-radius:8px;touch-action:none;z-index:3;cursor:grab}
+#decBar{display:none;position:absolute;top:8px;left:50%;transform:translateX(-50%);z-index:4;gap:6px;align-items:center;background:#0b2a35ee;border:1px solid var(--line);padding:6px;border-radius:12px;white-space:nowrap}
+#decBar .ghost{padding:8px 12px}
+</style>
+</head>
+<body>
+<div id="app">
+<div id="pages">
+<section class="page" id="p0">
+  <header><select id="aqSel"></select><button class="ghost" id="newAq" title="Nieuw aquarium">+</button></header>
+  <div class="sub"><span id="who"></span><button class="ghost" id="zo">-</button><b id="zv">x1</b><button class="ghost" id="zi">+</button></div>
+  <div id="tankWrap"><div id="tank"><div id="world"><div id="sand"></div></div></div><div id="empty"></div>
+  <div id="decBar"><button class="ghost" id="dMin">-</button><button class="ghost" id="dPlus">+</button><button class="ghost danger" id="dDel">Verwijder</button><button class="ghost" id="dDone">Klaar</button></div></div>
+  <div class="bar"><button class="primary" id="add">Vis toevoegen</button><button class="ghost" id="addDec">Decor</button></div>
+</section>
+<section class="page" id="p1"><div class="pad">
+  <h2>Vrienden</h2>
+  <label class="lbl" for="fName">Zoek iemand op naam</label>
+  <div class="item"><input type="text" id="fName" placeholder="naam"><button class="ghost" id="fSearch">Zoek</button></div>
+  <div class="list" id="fRes"></div>
+  <div id="frList"></div>
+  <h3>Iedereen</h3>
+  <button class="ghost" id="mDisc" style="width:100%">Alle openbare aquariums</button>
+</div></section>
+<section class="page" id="p2"><div class="pad">
+  <h2 id="meName"></h2>
+  <p class="note" id="meAq"></p>
+  <div class="list">
+    <button class="ghost" id="mPub"></button>
+    <button class="ghost danger" id="mDelAq">Dit aquarium verwijderen</button>
+    <button class="ghost" id="mSpec">Soorten beheren (admin)</button>
+    <button class="ghost" id="mOut">Uitloggen</button>
+  </div>
+</div></section>
+</div>
+<nav id="nav">
+  <button class="on" data-p="0"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c3-6 10-8 15-3l5-3v12l-5-3c-5 5-12 3-15-3z"/><circle cx="15" cy="11" r="1"/></svg>Aquarium</button>
+  <button data-p="1"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-4 3-6 7-6s7 2 7 6"/><circle cx="18" cy="9" r="2.5"/><path d="M18 14c3 0 4 2 4 5"/></svg>Vrienden</button>
+  <button data-p="2"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-5 4-7 8-7s8 2 8 7"/></svg>Ik</button>
+</nav>
+</div>
+
+<!-- inloggen -->
+<div class="ov on" id="ovAuth"><div class="sheet">
+  <img class="logo" alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMWE3ZjkyIi8+PHN0b3Agb2Zmc2V0PSIuNiIgc3RvcC1jb2xvcj0iIzBhM2E0YSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzA0MTYxZSIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJmYiIgeDE9IjAiIHkxPSIwIiB4Mj0iMCIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZmZDI3YSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2U3OWEyMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiBmaWxsPSJ1cmwoI2JnKSIvPjxwYXRoIGQ9Ik0wIDQyMCBRNjQgMzk2IDEyOCA0MjAgVDI1NiA0MjAgVDM4NCA0MjAgVDUxMiA0MjAgVjUxMiBIMFoiIGZpbGw9IiNkMmI5ODYiLz48cGF0aCBkPSJNNjAgNDMwIFE1MiAzODAgNzAgMzQwIE04NCA0MzAgUTkwIDM4NCA4MCAzNTIiIHN0cm9rZT0iIzNmYTY1YyIgc3Ryb2tlLXdpZHRoPSIxMiIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PHBhdGggZD0iTTQ0MCA0MzAgUTQ1MCAzODUgNDMyIDM1MCBNNDE2IDQzMCBRNDA4IDM5MiA0MjAgMzY0IiBzdHJva2U9IiMyZjhhNGEiIHN0cm9rZS13aWR0aD0iMTIiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxwYXRoIGQ9Ik0xMjAgMjU2IEw1MiAxOTAgUTc4IDI1NiA1MiAzMjIgWiIgZmlsbD0iI2UwOGExYSIvPjxwYXRoIGQ9Ik0yMDAgMTcwIFEyNTAgMTIwIDMwMCAxNzYgWiIgZmlsbD0iI2UwOGExYSIvPjxwYXRoIGQ9Ik0yMTAgMzQwIFEyNTAgNDAwIDMwMCAzMzYgWiIgZmlsbD0iI2UwOGExYSIvPjxlbGxpcHNlIGN4PSIyNzAiIGN5PSIyNTYiIHJ4PSIxNjAiIHJ5PSI5OCIgZmlsbD0idXJsKCNmYikiLz48cGF0aCBkPSJNMTcwIDIwMCBRMTUwIDI1NiAxNzAgMzEyIiBzdHJva2U9IiNiOTZlMGMiIHN0cm9rZS13aWR0aD0iNyIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iLjQ1Ii8+PHBhdGggZD0iTTIzMCAxNjggUTIxMCAyNTYgMjMwIDM0NCIgc3Ryb2tlPSIjYjk2ZTBjIiBzdHJva2Utd2lkdGg9IjciIGZpbGw9Im5vbmUiIG9wYWNpdHk9Ii4zNSIvPjxlbGxpcHNlIGN4PSIyOTAiIGN5PSIyOTAiIHJ4PSIxMjAiIHJ5PSI0MiIgZmlsbD0iI2ZmZjNkMCIgb3BhY2l0eT0iLjQ1Ii8+PHBhdGggZD0iTTMwMCAyNTggUTM0MCAzMDAgMjkwIDMxNiBRMzEwIDI5MCAzMDAgMjU4WiIgZmlsbD0iI2UwOGExYSIvPjxjaXJjbGUgY3g9IjM3MiIgY3k9IjIzMiIgcj0iMjQiIGZpbGw9IiNmZmYiLz48Y2lyY2xlIGN4PSIzODAiIGN5PSIyMzIiIHI9IjEyIiBmaWxsPSIjMTExIi8+PGNpcmNsZSBjeD0iNDMyIiBjeT0iMTcwIiByPSIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmZlOWVmIiBzdHJva2Utd2lkdGg9IjYiLz48Y2lyY2xlIGN4PSI0NTgiIGN5PSIxMjYiIHI9IjkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JmZTllZiIgc3Ryb2tlLXdpZHRoPSI1Ii8+PGNpcmNsZSBjeD0iNDIwIiBjeT0iMTAwIiByPSI2IiBmaWxsPSJub25lIiBzdHJva2U9IiNiZmU5ZWYiIHN0cm9rZS13aWR0aD0iNCIvPjwvc3ZnPg==">
+  <h2 style="text-align:center">Mijn aquarium</h2>
+  <p class="note">Log in of maak een account om je vangsten te bewaren en te delen.</p>
+  <label class="lbl" for="nm">Naam (enkel bij registreren)</label><input type="text" id="nm">
+  <label class="lbl" for="em">E-mail</label><input type="email" id="em" autocomplete="email">
+  <label class="lbl" for="pw">Wachtwoord</label><input type="password" id="pw" autocomplete="current-password">
+  <p class="note" id="aerr"></p>
+  <div class="acts"><button class="ghost" id="signup">Registreren</button><button class="primary" id="login">Inloggen</button></div>
+</div></div>
+
+<!-- vis toevoegen -->
+<div class="ov" id="ovAdd"><div class="sheet">
+  <h2>Nieuwe vangst</h2>
+  <div class="pv"><div class="thumb" id="thumb">Geen foto</div><div id="pvfish"></div></div>
+  <div class="tools"><button class="ghost" id="pick">Kies foto uit galerij</button></div>
+  <input type="file" id="file" accept="image/*" hidden>
+  <label class="lbl" for="sp">Soort</label><select id="sp"></select>
+  <div class="row">
+    <div><label class="lbl" for="len">Lengte (cm)</label><input type="text" id="len" inputmode="decimal" placeholder="bv. 72"></div>
+    <div><label class="lbl" for="wt">Gewicht (kg)</label><input type="text" id="wt" inputmode="decimal" placeholder="bv. 8,4"></div>
+  </div>
+  <div class="tools"><button class="ghost" id="estW">Schat gewicht uit lengte</button><button class="ghost" id="estL">Schat lengte uit gewicht</button></div>
+  <p class="note" id="note"></p>
+  <div class="acts"><button class="ghost" id="cancel">Annuleren</button><button class="primary" id="save">Opslaan</button></div>
+</div></div>
+
+<!-- detail -->
+<div class="ov" id="ovDet"><div class="sheet">
+  <h2 id="dtitle"></h2><div id="dphoto"></div><p id="dinfo"></p>
+  <div class="acts"><button class="ghost danger" id="del">Verwijderen</button><button class="ghost" id="close">Sluiten</button></div>
+</div></div>
+
+<!-- decor -->
+<div class="ov" id="ovDec"><div class="sheet">
+  <h2>Decor toevoegen</h2>
+  <div class="dgrid" id="dgrid"></div>
+  <label class="lbl" for="dsz">Grootte</label>
+  <select id="dsz"><option value="0.7">Klein</option><option value="1" selected>Middel</option><option value="1.6">Groot</option></select>
+  <p class="note">Het decor komt in het midden. Tik erop om het te selecteren, sleep het naar een andere plek, maak het groter of kleiner, of verwijder het.</p>
+  <div class="acts"><button class="ghost" id="decClose">Sluiten</button></div>
+</div></div>
+
+<!-- ontdekken -->
+<div class="ov" id="ovDisc"><div class="sheet">
+  <h2>Openbare aquariums</h2><div class="list" id="discList"></div>
+  <div class="acts"><button class="ghost" id="discClose">Sluiten</button></div>
+</div></div>
+
+<!-- soorten -->
+<div class="ov" id="ovSpec"><div class="sheet">
+  <h2>Soorten</h2>
+  <p class="note">Tik op een soort om te bewerken.</p>
+  <div class="list" id="specList"></div>
+  <h2 style="margin-top:18px" id="spTitle">Nieuwe soort</h2>
+  <div class="pv"><div id="spfish"></div></div>
+  <label class="lbl" for="sName">Naam</label><input type="text" id="sName">
+  <label class="lbl" for="sKind">Vorm</label><select id="sKind"></select>
+  <div class="row">
+    <div><label class="lbl" for="sK">Conditiefactor K</label><input type="text" id="sK" inputmode="decimal"></div>
+    <div><label class="lbl" for="sMax">Max lengte (cm)</label><input type="text" id="sMax" inputmode="numeric"></div>
+    <div><label class="lbl" for="sRy">Lichaamshoogte</label><input type="text" id="sRy" inputmode="decimal"></div>
+  </div>
+  <div class="row">
+    <div><label class="lbl" for="sC">Rug</label><input type="color" id="sC"></div>
+    <div><label class="lbl" for="sB">Buik</label><input type="color" id="sB"></div>
+    <div><label class="lbl" for="sF">Vinnen</label><input type="color" id="sF"></div>
+  </div>
+  <p class="note" id="sErr"></p>
+  <div class="acts"><button class="ghost" id="sNew">Leegmaken</button><button class="ghost" id="sAct">Uitschakelen</button><button class="primary" id="sSave">Opslaan</button></div>
+  <div class="acts"><button class="ghost" id="specClose">Sluiten</button></div>
+</div></div>
+
+<script>
+/* ===== Vul dit in ===== */
+const SB_URL='https://arokhvqzhtmgazdqpjht.supabase.co';
+const SB_KEY='sb_publishable_tc27KOUqv_xNam9gBvTRBQ_X1imKMZs';
+/* ====================== */
+const sb=window.supabase.createClient(SB_URL,SB_KEY);
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const num=v=>{const n=parseFloat(String(v).replace(',','.'));return isFinite(n)&&n>0?n:0};
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const show=id=>$(id).classList.add('on'),hide=id=>$(id).classList.remove('on');
+const kg=v=>String(v).replace('.',',');
+
+// dorsale vin per vorm: [begin, einde, hoogte]
+const D={karper:[28,82,12],snoek:[14,36,10],baars:[34,70,9],zander:[34,70,9],brasem:[38,72,11],voorn:[42,68,8],meerval:[36,58,5],forel:[42,66,8],steur:[14,30,8],zonnebaars:[28,80,13],graskarper:[38,64,9],spiegelkarper:[28,82,12]};
+const PXCM=0.8; // vaste schaal: pixels per cm (x zoom), zelfde voor alle vissen
+
+let me=null,prof={},species=[],aqs=[],cur=null,mine=true,catches=[],decor=[],zoom=1,openId=null,editSp=null;
+const spOf=id=>species.find(s=>s.id===id)||species[0];
+
+/* ---------- vis tekenen ---------- */
+function fatOf(s,L,W){if(!L||!W)return 1;return clamp((W*1000*100/Math.pow(L,3))/s.k,.75,1.35)}
+function fishSVG(s,fat,id){
+  const kd=s.kind,r=Math.min(s.ry*fat,26),top=30-r,bot=30+r,t=10+r*.5;
+  const [x1,x2,h]=D[kd]||[34,70,10];
+  let cl='',out='';
+  if(kd==='baars')[38,50,62,74].forEach(x=>cl+=`<path d="M${x} ${top} Q${x+4} 30 ${x} ${bot}" stroke="#2a3418" stroke-width="4" fill="none" opacity=".55"/>`);
+  if(kd==='zander')[42,58,74].forEach(x=>cl+=`<path d="M${x} ${top} Q${x+4} 30 ${x} ${bot}" stroke="#3b3a28" stroke-width="3" fill="none" opacity=".3"/>`);
+  if(kd==='snoek')for(let i=0;i<6;i++)cl+=`<circle cx="${30+i*10}" cy="${24+(i%2)*8}" r="2.2" fill="#e6e3a8"/>`;
+  if(kd==='forel')for(let i=0;i<7;i++)cl+=`<circle cx="${34+i*8}" cy="${22+(i*7%13)}" r="1.8" fill="${i%2?'#d8452f':'#2d3a2a'}"/>`;
+  if(kd==='spiegelkarper')[[44,25],[58,21],[71,29],[50,38],[64,39],[36,33],[78,38]].forEach(([x,y])=>cl+=`<circle cx="${x}" cy="${y}" r="4.6" fill="#f4e6b0" opacity=".6" stroke="#0003" stroke-width=".6"/>`);
+  if(kd==='graskarper')for(let x=30;x<=80;x+=7)for(let y=top+6;y<=bot-4;y+=7)cl+=`<path d="M${x} ${y} q3 3 0 6" stroke="#0004" stroke-width=".7" fill="none" opacity=".5"/>`;
+  if(kd==='zonnebaars'){[34,46,58].forEach(x=>cl+=`<path d="M${x} ${top} Q${x+4} 30 ${x} ${bot}" stroke="#2b7a86" stroke-width="3" fill="none" opacity=".35"/>`);for(let i=0;i<9;i++)cl+=`<circle cx="${30+i*6}" cy="${26+(i*5%14)}" r="1.5" fill="#f28a2e"/>`}
+  if(kd==='karper')[34,46,58,70].forEach(x=>cl+=`<path d="M${x} ${top+5} Q${x-6} 30 ${x} ${bot-5}" stroke="#6b4a1a" stroke-width="1" fill="none" opacity=".5"/>`);
+  if(kd==='snoek')out+=`<path d="M90 26 L112 28 Q114 31 112 34 L90 35 Z" fill="${s.c}"/>`;
+  if(kd==='steur'){
+    const yt=x=>30-r*Math.sqrt(Math.max(0,1-Math.pow((x-56)/42,2)));
+    out+=`<path d="M92 ${30-r*.5} L118 ${30+r*.35} L92 ${30+r*.5} Z" fill="${s.c}"/><path d="M104 ${30+r*.4} q1 6 -2 8 M100 ${30+r*.45} q1 6 -2 8" stroke="#222" stroke-width="1.2" fill="none"/>`;
+    for(let x=24;x<=82;x+=7)out+=`<path d="M${x} ${yt(x)+1} l3 -3.5 l3 3.5 Z" fill="#e6dcc0" stroke="#0004" stroke-width=".5"/>`;
+    out+=`<path d="M18 30 L-2 ${30-t-8} Q6 30 1 30 Z" fill="${s.f}"/>`;
+  }
+  if(kd==='zonnebaars')out+=`<circle cx="79" cy="${30+r*.05}" r="4" fill="#f24a2a" stroke="#222" stroke-width="1"/><path d="M84 ${30+r*.25} Q92 ${30+r*.45} 96 ${30+r*.2}" stroke="#2fb3c4" stroke-width="1.6" fill="none"/>`;
+  if(kd==='karper'||kd==='spiegelkarper')out+=`<path d="M98 32 Q104 34 105 40" stroke="${s.f}" stroke-width="1.4" fill="none"/><path d="M97 34 Q102 38 100 44" stroke="${s.f}" stroke-width="1.4" fill="none"/>`;
+  if(kd==='meerval')out+=`<path d="M98 32 Q108 30 116 38" stroke="#222" stroke-width="1.6" fill="none"/><path d="M97 33 Q107 38 112 48" stroke="#222" stroke-width="1.6" fill="none"/><path d="M92 40 Q96 48 92 54" stroke="#222" stroke-width="1.6" fill="none"/>`;
+  const anal=kd==='meerval'?`<path d="M20 ${bot-3} Q50 ${bot+9} 80 ${bot-3} Z" fill="${s.f}"/>`:`<path d="M40 ${bot-2} L52 ${bot+8} L62 ${bot-2} Z" fill="${s.f}"/>`;
+  const eye=kd==='voorn'?'#e8a33a':'#fff';
+  return `<svg viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+<defs><clipPath id="c${id}"><ellipse cx="56" cy="30" rx="42" ry="${r}"/></clipPath></defs>
+<path d="M18 30 L1 ${30-t} Q8 30 1 ${30+t} Z" fill="${s.f}"/>
+<path d="M${x1} ${top+3} Q${(x1+x2)/2} ${top-h} ${x2} ${top+3} Z" fill="${s.f}"/>${anal}
+<ellipse cx="56" cy="30" rx="42" ry="${r}" fill="${s.c}"/>
+<g clip-path="url(#c${id})"><ellipse cx="56" cy="${30+r*.75}" rx="44" ry="${r*.6}" fill="${s.b}"/>${cl}</g>${out}
+<path d="M84 ${top+4} Q80 30 84 ${bot-4}" stroke="#0004" stroke-width="1.2" fill="none"/>
+<ellipse cx="72" cy="${30+r*.55}" rx="8" ry="3.5" fill="${s.f}" transform="rotate(20 72 ${30+r*.55})"/>
+<circle cx="88" cy="${30-r*.3}" r="3.6" fill="${eye}"/><circle cx="89" cy="${30-r*.3}" r="1.9" fill="#111"/></svg>`;
+}
+
+/* ---------- decor tekenen ---------- */
+const DEC={
+zeewier:['Zeewier','<path d="M30 100Q18 75 32 55Q46 35 30 8" stroke="#2f8a4a" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M52 100Q40 70 55 50Q68 30 54 14" stroke="#3fa65c" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M74 100Q64 80 76 62Q86 46 76 30" stroke="#2a7a40" stroke-width="6" fill="none" stroke-linecap="round"/>'],
+gras:['Gras','<path d="M20 100Q22 70 12 50M34 100Q34 60 40 38M48 100Q50 66 46 46M62 100Q60 64 72 44M78 100Q78 74 90 58" stroke="#5ab86a" stroke-width="5" fill="none" stroke-linecap="round"/>'],
+rots:['Rots','<path d="M6 100L18 56L44 38L72 48L94 100Z" fill="#6b7a80"/><path d="M18 56L44 38L50 60L30 100L6 100Z" fill="#8a9aa0"/>'],
+hout:['Wortelhout','<path d="M8 96Q28 58 54 70Q76 80 92 38" stroke="#6b4a2a" stroke-width="12" fill="none" stroke-linecap="round"/><path d="M58 72Q62 54 50 44" stroke="#82603a" stroke-width="7" fill="none" stroke-linecap="round"/>'],
+kasteel:['Kasteel','<rect x="20" y="52" width="60" height="48" fill="#b9a98a"/><rect x="10" y="34" width="24" height="66" fill="#a89878"/><rect x="66" y="34" width="24" height="66" fill="#a89878"/><path d="M10 34h6v-6h5v6h5v-6h5v6h3M66 34h6v-6h5v6h5v-6h5v6h3" stroke="#a89878" stroke-width="5" fill="none"/><path d="M42 100V78Q50 66 58 78V100Z" fill="#2a2418"/>']
+};
+
+/* ---------- aquarium ---------- */
+const tank=$('tank'),world=$('world');let sel=null,nodes=[],WW=0,WH=0,fresh=false,fishSt={};
+function render(){
+  world.querySelectorAll('.fish,.decor').forEach(e=>e.remove());
+  const R=tank.getBoundingClientRect();if(!R.width)return;
+  WW=tank.clientWidth;WH=tank.clientHeight; // de wereld is even groot als de tank: vissen kunnen nooit uit beeld
+  world.style.width=WW+'px';
+  fresh=false;
+  decor.forEach(d=>{
+    const el=document.createElement('div'),w=Math.round(32*d.size*zoom);
+    el.className='decor'+(d.id===sel?' sel':'');el.dataset.id=d.id;el.style.width=el.style.height=w+'px';el.style.left=(d.x*WW-w/2)+'px';el.style.bottom=clamp(18+(d.y||0)*WH,18,Math.max(18,WH-w-4))+'px';
+    el.innerHTML=`<svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMax meet">${(DEC[d.kind]||[])[1]||''}</svg>`;
+    if(mine)el.onpointerdown=e=>decDown(e,d,el);
+    world.appendChild(el);
+  });
+  nodes=catches.map(f=>{
+    const s=spOf(f.species_id);if(!s)return null;
+    const L=f.length_cm||s.max_cm*.4;
+    const w=Math.round(clamp(L*PXCM*zoom*1.2,18,Math.min(WW*.9,(WH-70)*2))); // 1.2 = svg-breedte / lichaamslengte
+    const el=document.createElement('div');
+    el.className='fish';el.style.width=w+'px';el.style.height=w/2+'px';
+    el.innerHTML=fishSVG(s,fatOf(s,f.length_cm,f.weight_kg),f.id);
+    el.onclick=()=>showDetail(f.id);
+    world.appendChild(el);
+    // bestaande vissen houden hun plek; nieuwe vissen starten in het zichtbare deel
+    let n=fishSt[f.id];const maxY=Math.max(12,WH-w/2-58);
+    if(n){n.el=el;n.w=w;n.x=clamp(n.x,0,Math.max(0,WW-w));n.y0=clamp(n.y0,12,maxY)}
+    else n=fishSt[f.id]={el,w,x:Math.random()*Math.max(1,WW-w),y0:12+Math.random()*(maxY-12),vx:(Math.random()*.4+.25)*(Math.random()<.5?-1:1),ph:Math.random()*6};
+    return n;
+  }).filter(Boolean);
+  $('empty').style.display=catches.length||decor.length?'none':'grid';
+  $('empty').innerHTML=mine?'Nog geen vissen.<br>Voeg je eerste vangst toe.':'Dit aquarium is nog leeg.';
+  $('zv').textContent='x'+zoom;
+  $('decBar').style.display=mine&&sel&&decor.some(d=>d.id===sel)?'flex':'none';
+}
+function loop(t){
+  for(const n of nodes){
+    n.x+=n.vx;
+    if(n.x<0){n.x=0;n.vx=Math.abs(n.vx)}
+    if(n.x>WW-n.w){n.x=WW-n.w;n.vx=-Math.abs(n.vx)}
+    n.el.style.transform=`translate(${n.x}px,${n.y0+Math.sin(t/900+n.ph)*8}px) scaleX(${n.vx<0?-1:1})`;
+  }
+  requestAnimationFrame(loop);
+}
+$('zo').onclick=()=>{zoom=Math.max(1,zoom-1);render()};
+$('zi').onclick=()=>{zoom=Math.min(4,zoom+1);render()};
+
+/* ---------- pagina's ---------- */
+const pages=$('pages');let pg=0;
+function goPage(i){pages.scrollTo({left:i*pages.clientWidth,behavior:'smooth'})}
+document.querySelectorAll('#nav button').forEach(b=>b.onclick=()=>goPage(+b.dataset.p));
+pages.addEventListener('scroll',()=>{
+  const i=Math.round(pages.scrollLeft/pages.clientWidth);if(i===pg)return;pg=i;
+  document.querySelectorAll('#nav button').forEach(b=>b.classList.toggle('on',+b.dataset.p===i));
+  if(i===1&&me)loadFriends();
+  if(i===2)updateMe();
+});
+
+/* ---------- inloggen ---------- */
+async function auth(up){
+  const email=$('em').value.trim(),password=$('pw').value;
+  $('aerr').textContent='';
+  const r=up?await sb.auth.signUp({email,password,options:{data:{name:$('nm').value.trim()}}}):await sb.auth.signInWithPassword({email,password});
+  if(r.error){$('aerr').textContent=r.error.message;return}
+  if(up&&!r.data.session){$('aerr').textContent='Bevestig eerst je e-mail via de link in je mailbox.';return}
+  boot();
+}
+$('login').onclick=()=>auth(false);
+$('signup').onclick=()=>auth(true);
+$('mOut').onclick=async()=>{await sb.auth.signOut();me=null;cur=null;catches=[];decor=[];render();goPage(0);show('ovAuth')};
+
+async function boot(){
+  const{data:{session}}=await sb.auth.getSession();
+  if(!session){show('ovAuth');return}
+  me=session.user;hide('ovAuth');
+  const[p,s]=await Promise.all([sb.from('profiles').select('*').eq('id',me.id).single(),sb.from('species').select('*').order('name')]);
+  prof=p.data||{};species=s.data||[];
+  await loadAqs();loadFriends();
+}
+async function loadAqs(pick){
+  let{data}=await sb.from('aquariums').select('*').eq('owner',me.id).order('created_at');
+  data=data||[];
+  if(!data.length){const r=await sb.from('aquariums').insert({owner:me.id,name:'Mijn aquarium'}).select().single();if(r.data)data=[r.data]}
+  aqs=data;
+  await openAq(pick||(aqs[0]&&aqs[0].id));
+}
+function fillSel(){
+  let h=aqs.map(a=>`<option value="${a.id}">${esc(a.name)}</option>`).join('');
+  if(cur&&!mine)h+=`<option value="${cur.id}">${esc((cur.profiles&&cur.profiles.name)||'?')}: ${esc(cur.name)}</option>`;
+  $('aqSel').innerHTML=h;if(cur)$('aqSel').value=cur.id;
+}
+async function openAq(id){
+  cur=aqs.find(a=>a.id===id);
+  if(!cur){const r=await sb.from('aquariums').select('*,profiles(name)').eq('id',id).single();cur=r.data}
+  mine=cur.owner===me.id;
+  fillSel();
+  $('who').textContent=mine?(cur.is_public?'Openbaar':'Privé'):'Van '+((cur.profiles&&cur.profiles.name)||'?');
+  $('add').style.display=$('addDec').style.display=mine?'block':'none';
+  const[c,d]=await Promise.all([sb.from('catches').select('*').eq('aquarium_id',cur.id).order('created_at'),sb.from('decor').select('*').eq('aquarium_id',cur.id).order('created_at')]);
+  catches=c.data||[];decor=d.data||[];
+  fresh=true;fishSt={};sel=null;render();updateMe();
+}
+$('aqSel').onchange=e=>openAq(e.target.value);
+$('newAq').onclick=async()=>{
+  const name=(prompt('Naam van het nieuwe aquarium?')||'').trim();if(!name)return;
+  const r=await sb.from('aquariums').insert({owner:me.id,name}).select().single();
+  if(r.error){alert(r.error.message);return}
+  await loadAqs(r.data.id);
+};
+
+/* ---------- Ik-pagina ---------- */
+function updateMe(){
+  if(!me)return;
+  $('meName').textContent=prof.name||'Ik';
+  $('meAq').textContent=cur?(mine?`Actief aquarium: ${cur.name}`:`Je bekijkt het aquarium van iemand anders. Kies bovenaan een eigen aquarium om instellingen aan te passen.`):'';
+  $('mPub').style.display=$('mDelAq').style.display=mine?'block':'none';
+  $('mSpec').style.display=prof.is_admin?'block':'none';
+  $('mPub').textContent=cur&&cur.is_public?'Maak dit aquarium privé':'Maak dit aquarium openbaar';
+}
+$('mPub').onclick=async()=>{
+  const r=await sb.from('aquariums').update({is_public:!cur.is_public}).eq('id',cur.id);
+  if(r.error){alert(r.error.message);return}
+  await loadAqs(cur.id);
+};
+$('mDelAq').onclick=async()=>{
+  if(!confirm('Dit aquarium met alle vissen verwijderen?'))return;
+  const paths=catches.map(c=>c.photo_path).filter(Boolean);
+  if(paths.length)await sb.storage.from('photos').remove(paths);
+  const r=await sb.from('aquariums').delete().eq('id',cur.id);
+  if(r.error){alert(r.error.message);return}
+  cur=null;await loadAqs();
+};
+$('mDisc').onclick=async()=>{
+  const r=await sb.from('aquariums').select('id,name,profiles(name)').eq('is_public',true).neq('owner',me.id).order('created_at',{ascending:false}).limit(50);
+  const l=r.data||[];
+  $('discList').innerHTML=l.length?l.map(a=>`<button class="ghost" data-id="${a.id}">${esc(a.name)}<small>van ${esc(a.profiles&&a.profiles.name)}</small></button>`).join(''):'<p class="note">Nog geen openbare aquariums.</p>';
+  $('discList').querySelectorAll('button').forEach(b=>b.onclick=()=>{hide('ovDisc');goPage(0);openAq(b.dataset.id)});
+  show('ovDisc');
+};
+$('discClose').onclick=()=>hide('ovDisc');
+
+/* ---------- vrienden ---------- */
+let frRows=[];
+async function loadFriends(){
+  const r=await sb.from('friendships').select('*').or(`requester.eq.${me.id},addressee.eq.${me.id}`);
+  frRows=r.data||[];
+  const other=x=>x.requester===me.id?x.addressee:x.requester;
+  const ids=[...new Set(frRows.map(other))];
+  const pr=ids.length?(await sb.from('profiles').select('id,name').in('id',ids)).data||[]:[];
+  const nm=id=>esc((pr.find(p=>p.id===id)||{}).name||'?');
+  const inc=frRows.filter(x=>x.status==='pending'&&x.addressee===me.id);
+  const out=frRows.filter(x=>x.status==='pending'&&x.requester===me.id);
+  const fr=frRows.filter(x=>x.status==='accepted');
+  let h='';
+  if(inc.length)h+='<h3>Aanvragen</h3><div class="list">'+inc.map(x=>`<div class="item"><span>${nm(x.requester)}</span><button class="ghost" data-acc="${x.id}">Accepteren</button><button class="ghost danger" data-del="${x.id}">Weigeren</button></div>`).join('')+'</div>';
+  if(out.length)h+='<h3>Verstuurd</h3><div class="list">'+out.map(x=>`<div class="item"><span>${nm(x.addressee)} (wacht op antwoord)</span><button class="ghost" data-del="${x.id}">Annuleren</button></div>`).join('')+'</div>';
+  h+='<h3>Mijn vrienden</h3>'+(fr.length?fr.map(x=>`<div class="fr"><div class="item"><button class="ghost grow" data-open="${other(x)}">${nm(other(x))}</button><button class="ghost danger" data-del="${x.id}" data-ask="1">Verwijder</button></div><div class="list"></div></div>`).join(''):'<p class="note">Nog geen vrienden. Zoek hierboven iemand op naam.</p>');
+  $('frList').innerHTML=h;
+}
+$('frList').onclick=async e=>{
+  const b=e.target.closest('button');if(!b)return;const d=b.dataset;
+  if(d.acc){await sb.from('friendships').update({status:'accepted'}).eq('id',d.acc);loadFriends()}
+  else if(d.del){if(d.ask&&!confirm('Deze vriend verwijderen?'))return;await sb.from('friendships').delete().eq('id',d.del);loadFriends()}
+  else if(d.open){
+    const box=b.closest('.fr').querySelector('.list');
+    if(box.innerHTML){box.innerHTML='';return}
+    const r=await sb.from('aquariums').select('id,name').eq('owner',d.open).eq('is_public',true).order('created_at');
+    const l=r.data||[];
+    box.innerHTML=l.length?l.map(a=>`<button class="ghost" data-aq="${a.id}">${esc(a.name)}</button>`).join(''):'<p class="note">Geen openbare aquariums.</p>';
+  }
+  else if(d.aq){goPage(0);openAq(d.aq)}
+};
+$('fSearch').onclick=async()=>{
+  const q=$('fName').value.trim().replace(/[%_,()]/g,'');if(!q)return;
+  const r=await sb.from('profiles').select('id,name').ilike('name','%'+q+'%').neq('id',me.id).limit(8);
+  const l=r.data||[];
+  $('fRes').innerHTML=l.length?l.map(p=>`<div class="item"><span>${esc(p.name)}</span><button class="ghost" data-add="${p.id}">Toevoegen</button></div>`).join(''):'<p class="note">Niemand gevonden.</p>';
+};
+$('fRes').onclick=async e=>{
+  const b=e.target.closest('button');if(!b)return;const id=b.dataset.add;
+  if(frRows.some(x=>x.requester===id||x.addressee===id)){b.textContent='Al toegevoegd of aangevraagd';b.disabled=true;return}
+  const r=await sb.from('friendships').insert({requester:me.id,addressee:id});
+  if(r.error){b.textContent='Mislukt';return}
+  b.textContent='Aanvraag verstuurd';b.disabled=true;loadFriends();
+};
+
+/* ---------- detail ---------- */
+const photoUrl=p=>sb.storage.from('photos').getPublicUrl(p).data.publicUrl;
+function showDetail(id){
+  const f=catches.find(x=>x.id===id);if(!f)return;openId=id;
+  const s=spOf(f.species_id);
+  $('dtitle').textContent=s.name;
+  $('dphoto').style.backgroundImage=f.photo_path?`url(${photoUrl(f.photo_path)})`:'none';
+  $('dphoto').style.display=f.photo_path?'block':'none';
+  $('dinfo').textContent=[s.name,f.length_cm&&f.length_cm+' cm',f.weight_kg&&kg(f.weight_kg)+' kg',new Date(f.created_at).toLocaleDateString('nl-BE')].filter(Boolean).join(' · ');
+  $('del').style.display=mine?'block':'none';
+  show('ovDet');
+}
+$('close').onclick=()=>hide('ovDet');
+$('del').onclick=async()=>{
+  if(!confirm('Deze vis verwijderen?'))return;
+  const f=catches.find(x=>x.id===openId);
+  const r=await sb.from('catches').delete().eq('id',openId);
+  if(r.error){alert(r.error.message);return}
+  if(f&&f.photo_path)await sb.storage.from('photos').remove([f.photo_path]);
+  catches=catches.filter(x=>x.id!==openId);render();hide('ovDet');
+};
+
+/* ---------- decor toevoegen ---------- */
+$('dgrid').innerHTML=Object.keys(DEC).map(k=>`<button class="ghost" data-k="${k}"><svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMax meet">${DEC[k][1]}</svg>${DEC[k][0]}</button>`).join('');
+$('addDec').onclick=()=>show('ovDec');
+$('decClose').onclick=()=>hide('ovDec');
+$('dgrid').onclick=async e=>{
+  const b=e.target.closest('button');if(!b)return;
+  const cx=.5+(Math.random()-.5)*.12;
+  const r=await sb.from('decor').insert({aquarium_id:cur.id,owner:me.id,kind:b.dataset.k,x:clamp(cx,.03,.97),size:+$('dsz').value}).select().single();
+  if(r.error){alert(r.error.message);return}
+  decor.push(r.data);sel=r.data.id;render();hide('ovDec');
+};
+// decor selecteren en slepen: tik = selecteren, daarna slepen = verplaatsen
+let drag=null;
+function decDown(e,d,el){
+  if(sel!==d.id){sel=d.id;render();return}
+  const w=el.offsetWidth;
+  drag={d,el,w,px:e.clientX,py:e.clientY,cx:d.x*WW,bot:parseFloat(el.style.bottom)};
+  el.setPointerCapture(e.pointerId);
+  el.onpointermove=ev=>{
+    const cx=clamp(drag.cx+ev.clientX-drag.px,w/2,Math.max(w/2,WW-w/2));
+    const bot=clamp(drag.bot-(ev.clientY-drag.py),18,Math.max(18,WH-w-4));
+    el.style.left=(cx-w/2)+'px';el.style.bottom=bot+'px';drag.nx=cx;drag.nb=bot;
+  };
+  el.onpointerup=el.onpointercancel=()=>{
+    el.onpointermove=el.onpointerup=el.onpointercancel=null;
+    if(drag&&drag.nx!==undefined){d.x=drag.nx/WW;d.y=(drag.nb-18)/WH;saveDecor(d)}
+    drag=null;
+  };
+}
+async function saveDecor(d){
+  const r=await sb.from('decor').update({x:d.x,y:d.y||0,size:d.size}).eq('id',d.id);
+  if(r.error)alert('Opslaan van het decor mislukt: '+r.error.message);
+}
+const selD=()=>decor.find(d=>d.id===sel);
+$('dPlus').onclick=()=>{const d=selD();if(!d)return;d.size=Math.min(3,+(d.size*1.25).toFixed(2));render();saveDecor(d)};
+$('dMin').onclick=()=>{const d=selD();if(!d)return;d.size=Math.max(.3,+(d.size*.8).toFixed(2));render();saveDecor(d)};
+$('dDel').onclick=()=>{if(sel)removeDecor(sel)};
+$('dDone').onclick=()=>{sel=null;render()};
+tank.addEventListener('pointerdown',e=>{if(sel&&!e.target.closest('.decor')){sel=null;render()}});
+async function removeDecor(id){
+  if(!confirm('Dit decor verwijderen?'))return;
+  const r=await sb.from('decor').delete().eq('id',id);
+  if(r.error){alert(r.error.message);return}
+  decor=decor.filter(d=>d.id!==id);sel=null;render();
+}
+
+/* ---------- vis toevoegen ---------- */
+let photoBlob=null;
+const NOTE='Een foto is verplicht. De schatting is een formule per soort, geen foto-AI.';
+function curSp(){return species.find(s=>s.id==$('sp').value)}
+function preview(){const s=curSp();if(s)$('pvfish').innerHTML=fishSVG(s,fatOf(s,num($('len').value),num($('wt').value)),'pv')}
+['sp','len','wt'].forEach(id=>$(id).addEventListener('input',preview));
+$('add').onclick=()=>{
+  photoBlob=null;$('thumb').style.backgroundImage='none';$('thumb').textContent='Geen foto';
+  $('len').value=$('wt').value='';
+  $('sp').innerHTML=species.filter(s=>s.active).map(s=>`<option value="${s.id}">${esc(s.name)}</option>`).join('');
+  $('note').textContent=NOTE;$('save').disabled=true;preview();show('ovAdd');
+};
+$('cancel').onclick=()=>hide('ovAdd');
+$('pick').onclick=()=>$('file').click();
+$('file').onchange=async e=>{
+  const file=e.target.files[0];if(!file)return;
+  photoBlob=await resize(file);
+  $('thumb').style.backgroundImage=photoBlob?`url(${URL.createObjectURL(photoBlob)})`:'none';$('thumb').textContent=photoBlob?'':'Geen foto';
+  $('save').disabled=!photoBlob;
+  e.target.value='';
+};
+function resize(file){
+  return new Promise(res=>{
+    const img=new Image(),u=URL.createObjectURL(file);
+    img.onload=()=>{
+      const k=Math.min(1,900/Math.max(img.width,img.height)),c=document.createElement('canvas');
+      c.width=Math.round(img.width*k);c.height=Math.round(img.height*k);
+      c.getContext('2d').drawImage(img,0,0,c.width,c.height);
+      URL.revokeObjectURL(u);c.toBlob(b=>res(b),'image/jpeg',.8);
+    };
+    img.onerror=()=>{URL.revokeObjectURL(u);res(null)};
+    img.src=u;
+  });
+}
+$('estW').onclick=()=>{
+  const L=num($('len').value),s=curSp();
+  if(!L){$('note').textContent='Vul eerst een lengte in.';return}
+  $('wt').value=kg((s.k*Math.pow(L,3)/100/1000).toFixed(2));
+  $('note').textContent=`Geschat gewicht voor een gemiddelde ${s.name.toLowerCase()} van ${L} cm. Pas aan als jouw vis zwaarder of lichter was.`;
+  preview();
+};
+$('estL').onclick=()=>{
+  const W=num($('wt').value),s=curSp();
+  if(!W){$('note').textContent='Vul eerst een gewicht in.';return}
+  $('len').value=Math.round(Math.cbrt(W*1000*100/s.k));
+  $('note').textContent=`Geschatte lengte voor een gemiddelde ${s.name.toLowerCase()} van ${kg(W)} kg. Pas aan als jouw vis langer of korter was.`;
+  preview();
+};
+$('save').onclick=async()=>{
+  if(!photoBlob){$('note').textContent='Kies eerst een foto.';return}
+  $('save').disabled=true;
+  const path=`${me.id}/${crypto.randomUUID()}.jpg`;
+  const u=await sb.storage.from('photos').upload(path,photoBlob,{contentType:'image/jpeg'});
+  if(u.error){$('note').textContent='Foto uploaden mislukt: '+u.error.message;$('save').disabled=false;return}
+  const r=await sb.from('catches').insert({aquarium_id:cur.id,owner:me.id,species_id:+$('sp').value,length_cm:num($('len').value)||null,weight_kg:num($('wt').value)||null,photo_path:path}).select().single();
+  if(r.error){await sb.storage.from('photos').remove([path]);$('note').textContent='Opslaan mislukt: '+r.error.message;$('save').disabled=false;return}
+  catches.push(r.data);render();hide('ovAdd');
+};
+
+/* ---------- soorten beheren (admin) ---------- */
+$('sKind').innerHTML=Object.keys(D).map(k=>`<option value="${k}">${k}</option>`).join('');
+function specList(){
+  $('specList').innerHTML=species.map(s=>`<button class="ghost ${s.active?'':'off'}" data-id="${s.id}">${esc(s.name)}<small>${s.kind} · max ${s.max_cm} cm${s.active?'':' · uit'}</small></button>`).join('');
+  $('specList').querySelectorAll('button').forEach(b=>b.onclick=()=>fillSp(species.find(s=>s.id==b.dataset.id)));
+}
+function fillSp(s){
+  editSp=s||null;
+  $('spTitle').textContent=s?'Bewerken: '+s.name:'Nieuwe soort';
+  $('sName').value=s?s.name:'';$('sKind').value=s?s.kind:'karper';
+  $('sK').value=s?s.k:1;$('sMax').value=s?s.max_cm:60;$('sRy').value=s?s.ry:15;
+  $('sC').value=s?s.c:'#8a8a6a';$('sB').value=s?s.b:'#e0dcc0';$('sF').value=s?s.f:'#6a6a50';
+  $('sAct').style.display=s?'block':'none';$('sAct').textContent=s&&s.active?'Uitschakelen':'Inschakelen';
+  $('sErr').textContent='';spPrev();
+}
+function spDraft(){return{name:$('sName').value.trim(),kind:$('sKind').value,k:num($('sK').value),max_cm:Math.round(num($('sMax').value)),ry:clamp(num($('sRy').value),5,26),c:$('sC').value,b:$('sB').value,f:$('sF').value}}
+function spPrev(){const d=spDraft();$('spfish').innerHTML=fishSVG({...d,ry:d.ry||15},1,'sp')}
+['sKind','sRy','sC','sB','sF'].forEach(id=>$(id).addEventListener('input',spPrev));
+$('mSpec').onclick=()=>{specList();fillSp(null);show('ovSpec')};
+$('sNew').onclick=()=>fillSp(null);
+$('specClose').onclick=()=>hide('ovSpec');
+$('sSave').onclick=async()=>{
+  const d=spDraft();
+  if(!d.name||!d.k||!d.max_cm){$('sErr').textContent='Vul naam, K en max lengte in.';return}
+  const r=editSp?await sb.from('species').update(d).eq('id',editSp.id):await sb.from('species').insert(d);
+  if(r.error){$('sErr').textContent=r.error.message;return}
+  await reloadSp();fillSp(null);
+};
+$('sAct').onclick=async()=>{
+  const r=await sb.from('species').update({active:!editSp.active}).eq('id',editSp.id);
+  if(r.error){$('sErr').textContent=r.error.message;return}
+  await reloadSp();fillSp(null);
+};
+async function reloadSp(){const s=await sb.from('species').select('*').order('name');species=s.data||[];specList();render()}
+
+boot();requestAnimationFrame(loop);
+addEventListener('resize',render);
+</script>
+</body>
+</html>
